@@ -1,18 +1,102 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <ion-navbar color='navbarColor'>
+        <button ion-button menuToggle>
+      <ion-icon  name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+        <ion-title class="titleBg"><span style="text-align: left; color:aliceblue;">LOGO</span></ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+    <!-- <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <p>
+        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+    </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
+    <div padding-left class="row">
+        <button class="col-20 " ion-button color="dark">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+             <span padding-left>Back</span></button>
+        <h3 class="col col-center" text-center>My List</h3>
+
+        <!-- <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>4 -->
+
+
+    </div>
+    <ion-card>
+        <ion-item class="row">
+            <ion-input class="col-50" margin-right padding-right type="text" placeholder="Search Reviews">
+            </ion-input>
+            <ion-icon class=" col-20 activeStar" name="star"></ion-icon>
+        </ion-item>
+    </ion-card>
+
+    <ion-list>
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img class="imageStyle" src="http://stz.india.com/sites/default/files/styles/zeebiz_850x478/public/2017/06/21/20710-service2-pixabay.jpg?itok=WUhtrj8a">
+            </ion-thumbnail>
+            <h2>Item One</h2>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <p>47 Reviews</p>
+            <button ion-button clear item-end>
+                <ion-icon class="lstDeleteBtn" name="md-trash"></ion-icon>
+            </button>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img class="imageStyle" src="http://stz.india.com/sites/default/files/styles/zeebiz_850x478/public/2017/06/21/20710-service2-pixabay.jpg?itok=WUhtrj8a">
+            </ion-thumbnail>
+            <h2>Item Two</h2>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <p>47 Reviews</p>
+            <button ion-button clear item-end>
+                <ion-icon class="lstDeleteBtn" name="md-trash"></ion-icon>
+            </button>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img class="imageStyle" src="http://stz.india.com/sites/default/files/styles/zeebiz_850x478/public/2017/06/21/20710-service2-pixabay.jpg?itok=WUhtrj8a">
+            </ion-thumbnail>
+            <h2>Item Three</h2>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <p>47 Reviews</p>
+            <button ion-button clear item-end>
+                <ion-icon class="lstDeleteBtn" name="md-trash"></ion-icon>
+            </button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img class="imageStyle" src="http://stz.india.com/sites/default/files/styles/zeebiz_850x478/public/2017/06/21/20710-service2-pixabay.jpg?itok=WUhtrj8a">
+            </ion-thumbnail>
+            <h2>Item Four</h2>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="activeStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <ion-icon class="inactiveStar" name="star"></ion-icon>
+            <p>47 Reviews</p>
+            <button ion-button clear item-end>
+                <ion-icon class="lstDeleteBtn" name="md-trash"></ion-icon>
+            </button>
+        </ion-item>
+
+
+    </ion-list>
 </ion-content>

@@ -1,3 +1,29 @@
-page-home {
+page-home {}
 
+.titleBg {
+    background-color: #E05354;
+    .toolbar-title-ios {
+        text-align: left;
+    }
+}
+
+.menuBtnBg {
+    color: #E05354;
+}
+
+.imageStyle {
+    border-radius: 5px;
+}
+
+.activeStar {
+    color: #FFC107;
+}
+
+.inactiveStar {
+    color: #818181;
+}
+
+.lstDeleteBtn {
+    color: #E05354;
+    font-size: 30px;
 }
